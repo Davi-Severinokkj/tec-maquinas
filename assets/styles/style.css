@@ -1,0 +1,443 @@
+/* HEADER */
+.header_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header_container img {
+    max-width: 150px;
+    height: auto;
+    transition: 0.3s;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header_container img:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.nav_header {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.nav_header ul {
+    font-size: 20px;
+    display: flex;
+}
+
+.nav_header li:hover {
+    transition: 0.3s;
+    transform: scale(1.03);
+    cursor: pointer;
+    color: rgb(34, 71, 151);
+}
+
+.nav_header li {
+    transition: 0.3s;
+}
+
+.nav_header a {
+    transition: 0.3s;
+}
+
+.nav_header a:hover {
+    transition: 0.3s;
+    transform: scale(1.03);
+    cursor: pointer;
+    color: rgb(34, 71, 151);
+}
+
+.header_container i {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.header_container i:hover {
+    cursor: pointer;
+    color: #C13584;
+    transform: scale(1.03);
+}
+
+.btn-orcamento {
+
+    size: 330px;
+    font-family: "Poppins";
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    color: white;
+    background-color: rgb(34, 71, 151);
+}
+
+.btn-orcamento:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.02);
+}
+
+/* MAIN */
+
+.main-section {
+    /* Criamos uma camada preta transparente em cima da imagem */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../imgs/cozinha-industrial-editada.jpg);
+    /* 3. A imagem lá no fundo */
+    /* 3. A imagem lá no fundo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 550px;
+
+    /* Propriedades extras para alinhar os textos que você colocar dentro dela */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.main-section p {
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.card-eq {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    border-radius: 8px;
+    padding: 24px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(34, 71, 151, 0.58);
+    transition: transform 0.2s;
+}
+
+.card-eq:hover {
+    transform: translateY(-5px);
+}
+
+
+.card-eq img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+/* BOX-HELP */
+
+.container-boxh {
+    margin: 100px 200px 100px 200px;
+    border-radius: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.357);
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.container-boxh p {
+    max-width: 590px;
+    padding: 20px;
+}
+
+.container-boxh button {
+    font-size: 17px;
+    font-family: "Poppins";
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    color: white;
+    background-color: #239627;
+
+}
+
+.container-boxh button:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.02);
+}
+
+
+/* SOBRE */
+
+.container-sobre {
+    background-color: rgba(211, 205, 205, 0.295);
+    padding: 20px;
+    border-radius: 30px 30px 0px 0px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.sobre-desc {
+    flex: 1;
+    max-width: 50%;
+}
+
+.sobre-img {
+    flex: 1;
+    max-width: 45%;
+}
+
+.container-sobre img {
+    border-radius: 30px;
+    width: 100%;
+    /* Em vez de 500px fixos, ela vai se adaptar ao tamanho da div pai */
+    max-width: 500px;
+    /* Mas ela nunca vai passar de 500px se a tela for gigante */
+    height: auto;
+    transition: 0.2s;
+    box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.container-sobre img:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.01);
+}
+
+/* BOX-SOBRE */
+
+.container_box_sobre {
+    background-color: rgba(211, 205, 205, 0.295);
+    padding: 20px;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    text-align: center;
+    padding: 50px;
+}
+
+.card-box-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid rgba(82, 80, 80, 0.548);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.card-box-sobre:hover {
+    cursor: default;
+    transform: translateY(-1px);
+    transition: 0.2s;
+    border: 1px solid #224797;
+}
+
+.card-box-sobre p {
+    max-width: 250px;
+    line-height: 1.5;
+}
+
+.card-box-sobre i {
+    color: #224797;
+    font-size: 25px;
+}
+
+/* TRABALHOS REALIZADOS */
+
+.container_trabalhos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Alinha o texto e a imagem verticalmente ao centro */
+    justify-content: space-between;
+    /* Distribui o espaço entre o texto e a imagem */
+    gap: 30px;
+    /* Um espaço um pouco maior fica mais elegante */
+    padding: 40px;
+    /* Espaçamento interno para o conteúdo não colar na borda da tela */
+}
+
+.container_trabalhos h4 {
+    color: #224797;
+}
+
+/* Garante que o texto e a imagem dividam o espaço meio a meio */
+.trabalhos_conteudo,
+.trabalhos_imagem {
+    flex: 1;
+}
+
+.container_trabalhos img {
+    transition: 0.3s;
+    box-shadow: 10px 10px 30px;
+    width: 100%;
+    max-width: 550px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.container_trabalhos img:hover {
+    box-shadow: 10px 10px 30px;
+    cursor: default;
+    transition: 0.3s;
+    transform: scale(1.01);
+}
+
+.footer_container {
+    padding: 150px;
+    color: #F2F0F0;
+    padding: 30px;
+    background-color: black;
+    justify-content: space-around;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.footer_container img {
+    padding: 0px;
+    margin: 0px;
+    max-width: 100px;
+    height: auto;
+    transition: 0.2s;
+}
+
+.containers_child_footer {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    color: #F2F0F0;
+    max-width: 550px;
+}
+
+.containers_child_footer a {
+    padding: 0px;
+    margin: 0px;
+    transition: 0.3s;
+    color: #F2F0F0;
+}
+
+.containers_child_footer i:hover {
+    cursor: default;
+}
+
+.containers_child_footer span:hover {
+    cursor: pointer;
+    transition: 0.1s;
+    color: #224797;
+}
+
+.containers_child_footer {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    color: white;
+    max-width: 550px;
+}
+
+.containers_child_footer a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    transition: 0.3s;
+    color: #F2F0F0;
+}
+
+.containers_child_footer a:hover {
+    cursor: pointer;
+    transition: 0.1s;
+    color: #224797;
+}
+
+.containers_child_footer li:hover {
+    color: #3a77fcc5;
+    cursor: default;
+}
+
+/* SERVIÇOS */
+
+.container-cards-servicos {
+    transition: 0.3s;
+    padding: 30px;
+    gap: 70px;
+    display: flex;
+    text-align: start;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.cards-servicos {
+    padding: 50px;
+    border-radius: 30px;
+    border: solid 1px rgba(48, 47, 47, 0.719);
+}
+
+.cards-servicos i {
+    transition: 0.3s;
+    background-color: #2247972c;
+    color: black;
+    font-size: 25px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0);
+}
+
+.cards-servicos:hover {
+    box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.137);
+    cursor: default;
+    transition: 0.3s;
+    border-color: #224797;
+}
+
+.cards-servicos:hover i {
+    cursor: default;
+    transition: 0.3s;
+    color: white;
+    background-color: #224797;
+}
+.menu-toggle {
+    display: none;
+
+    background: none;
+    border: none;
+
+    font-size: 30px;
+    cursor: pointer;
+}
