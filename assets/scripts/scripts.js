@@ -67,3 +67,14 @@ document.addEventListener("click", (e) => {
         menu.classList.remove("active");
     }
 });
+const botaoWhatsapp = document.querySelector(".whatsapp-float");
+
+window.addEventListener("scroll", () => {
+    const footerTopo = footer.getBoundingClientRect().top;
+
+    if (footerTopo <= window.innerHeight) {
+        botaoWhatsapp.classList.add("hide");
+    } else {
+        botaoWhatsapp.classList.remove("hide");
+    }
+});

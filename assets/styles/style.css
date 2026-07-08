@@ -441,3 +441,59 @@
     font-size: 30px;
     cursor: pointer;
 }
+
+.whatsapp-float {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    font-size: 32px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+
+    transition: .3s;
+    z-index: 9999;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    background-color: #20b358;
+}
+.whatsapp-float {
+    animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.whatsapp-float {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.whatsapp-float.hide {
+    opacity: 0;
+    pointer-events: none;
+}
