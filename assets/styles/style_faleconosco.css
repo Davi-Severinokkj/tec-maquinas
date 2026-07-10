@@ -13,11 +13,11 @@
     margin: 70px 0px 70px 0px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 9px;
     font-size: 1rem;
 }
 .container_child_fale_conosco i{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .container_child_fale_conosco button {
