@@ -46,12 +46,12 @@
     }
 
     .footer_container {
-        
+
         grid-template-columns: 1fr 1fr;
         gap: 40px;
     }
 
-    .containers_child_footer{
+    .containers_child_footer {
         text-align: start;
     }
 
@@ -89,7 +89,7 @@
 ======================================================= */
 
 @media (max-width:768px) {
-    
+
 
     * {
         box-sizing: border-box;
@@ -167,6 +167,14 @@
         max-width: 350px;
     }
 
+    .card-eq img {
+        object-fit: cover;
+        border-radius: 5px;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 16px;
+    }
+
     /* SOBRE */
 
     .container-sobre {
@@ -215,7 +223,7 @@
         padding: 20px;
     }
 
-    
+
     .container_trabalhos img {
         width: 100%;
         height: auto;
@@ -224,7 +232,8 @@
     .trabalhos_imagem {
         width: 300px;
     }
-    .trabalhos_conteudo{
+
+    .trabalhos_conteudo {
         font-size: 15px;
     }
 
@@ -240,7 +249,7 @@
 
     .footer_container {
         grid-template-columns: 1fr;
-        
+
         padding: 40px 20px;
         gap: 35px;
     }
