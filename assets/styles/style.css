@@ -87,10 +87,7 @@
 /* MAIN */
 
 .main-section {
-    /* Criamos uma camada preta transparente em cima da imagem */
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../imgs/cozinha-industrial-editada.jpg);
-    /* 3. A imagem lá no fundo */
-    /* 3. A imagem lá no fundo */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,20 +95,20 @@
     width: 100%;
     height: 550px;
 
-    /* Propriedades extras para alinhar os textos que você colocar dentro dela */
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     color: white;
-    font-size: 20px;
+
 }
 
 .main-section p {
-    max-width: 650px;
-    line-height: 1.7;
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
 }
-
 
 
 .cards-container {
@@ -246,7 +243,7 @@
     padding: 50px;
 }
 
-.card-box-sobre {    
+.card-box-sobre {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -461,7 +458,7 @@
 }
 
 
-.tag-card{
+.tag-card {
     display: flex;
     justify-content: center;
     font-size: 14px
@@ -498,7 +495,7 @@
 
     font-size: 32px;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
 
     transition: .3s;
     z-index: 9999;
@@ -508,6 +505,7 @@
     transform: scale(1.08);
     background-color: #20b358;
 }
+
 .whatsapp-float {
     animation: aparecer 0.5s ease;
 }
@@ -523,6 +521,7 @@
         transform: translateY(0);
     }
 }
+
 .whatsapp-float {
     opacity: 1;
     transition: opacity .3s ease;
